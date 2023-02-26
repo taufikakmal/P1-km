@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #13202c;
+  position: absolute;
+  height: 200%;
+	overflow: auto;
+  }
+  
+  .sidebar a {
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 16px;
+	text-decoration: none;
+  }
+   
+  .sidebar a.active {
+	background-color: #08588d;
+	color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+  }
+  
+  div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+	.sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+	.sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+  }
+
+  .scroll{
+    width: 100%;
+    background: #ffff;
+    padding: 5px;
+    overflow: scroll;
+    height: 60%;
+    
+    /*script tambahan khusus untuk IE */
+    scrollbar-face-color: #ffffff; 
+    scrollbar-shadow-color: #FFFFFF; 
+    scrollbar-highlight-color: #6F4709; 
+    scrollbar-3dlight-color: #111111; 
+    scrollbar-darkshadow-color: #6F4709; 
+    scrollbar-track-color: #FFE8C1; 
+    scrollbar-arrow-color: #6F4709;
+  }
+
+  @media screen and (max-width: 768px){
+            .container{
+                width:90%;
+            }
+
+            .col-5{
+                width:50%;
+            }
+
+  }
